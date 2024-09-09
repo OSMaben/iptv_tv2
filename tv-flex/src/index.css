@@ -1,0 +1,82 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: #0e0316;
+}
+
+body::-webkit-scrollbar {
+  width: 0.4em;
+}
+
+body::-webkit-scrollbar-track {
+  border-radius: 100px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #192031;
+  border-radius: 100px;
+}
+
+.hideScroll::-webkit-scrollbar {
+  display: none;
+}
+
+.gradient_bg {
+  background: linear-gradient(90deg, #1a4c11 0%, #2d882d 50%, #5eb95e 100%);
+}
+.gradient_text {
+  background: linear-gradient(90deg, #1a4c11 0%, #2d882d 50%, #5eb95e 100%);
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.myBg {
+  background-image: url("./assets/main.webp");
+  position: relative;
+  padding: 70px 0;
+  padding-top: 160px;
+  position: relative;
+
+  display: block;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.myBg::after {
+  content: "";
+  background: rgb(3 7 18 / 61%);
+  display: block;
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  top: 0;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
